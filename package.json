@@ -1,0 +1,24 @@
+{
+  "name": "blind-pitch",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "A blind-date game: play four co-op rounds with a stranger and unlock their profile as chemistry grows.",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "dev:static": "npx --yes live-server --port=5173 --no-browser",
+    "test": "node --test tests/unit/",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "ws": "^8.18.0"
+  }
+}
